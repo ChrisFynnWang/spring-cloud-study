@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ProviderController {
 
-    @Value("${username}")
-    public String username;
+    @Value("${usernames}")
+    public String usernames;
 
     @GetMapping("/hi")
     public String hi(@RequestParam(value = "name", defaultValue = "forezp", required = false) String name) {
@@ -25,6 +25,6 @@ public class ProviderController {
 
     @GetMapping("/name")
     public String getName() {
-        return username;
+        return usernames;
     }
 }
