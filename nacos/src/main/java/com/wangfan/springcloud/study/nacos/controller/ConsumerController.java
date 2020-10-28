@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class ConsumerController {
 
-    @Autowired
+/*    @Autowired
     RestTemplate restTemplate;
 
     @Autowired
@@ -34,6 +34,6 @@ public class ConsumerController {
     @GetMapping("/name-feign")
     public String nameFeign() {
         return providerClient.name();
-    }
+    }*/
 
 }
