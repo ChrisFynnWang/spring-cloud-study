@@ -69,12 +69,11 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <!--配置中心客户端-->
+        <!--配置中心-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
         </dependency>
-
     </dependencies>
     <build>
         <finalName>localhost</finalName>
