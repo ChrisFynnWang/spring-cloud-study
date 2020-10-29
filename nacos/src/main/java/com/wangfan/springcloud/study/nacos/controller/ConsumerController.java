@@ -2,6 +2,7 @@ package com.wangfan.springcloud.study.nacos.controller;
 
 import com.wangfan.springcloud.study.nacos.service.ProviderClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,9 +14,10 @@ import org.springframework.web.client.RestTemplate;
  * @Date : 2020/10/24 12:16
  */
 @RestController
+@RefreshScope
 public class ConsumerController {
 
-/*    @Autowired
+    @Autowired
     RestTemplate restTemplate;
 
     @Autowired
@@ -34,6 +36,6 @@ public class ConsumerController {
     @GetMapping("/name-feign")
     public String nameFeign() {
         return providerClient.name();
-    }*/
+    }
 
 }

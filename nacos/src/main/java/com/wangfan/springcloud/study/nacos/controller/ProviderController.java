@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProviderController {
 
     @Value("${usernames}")
-    public String usernames;
+    private String username;
 
     @GetMapping("/hi")
     public String hi(@RequestParam(value = "name", defaultValue = "forezp", required = false) String name) {
@@ -25,6 +25,6 @@ public class ProviderController {
 
     @GetMapping("/name")
     public String getName() {
-        return usernames;
+        return username;
     }
 }
